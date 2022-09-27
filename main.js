@@ -1,3 +1,4 @@
+const { end } = ("@popperjs/core");
 const player1Score = document.querySelector(".p1");
 const player2Score = document.querySelector(".p2");
 const scoreBox = document.querySelector(".score-limit input");
@@ -28,15 +29,28 @@ function clickButton (e){
 
 function addPointP1 (){
     console.log("add a point")
-    player1Score = +player1Score.innerText++
+    player1Score = `${+player1Score.innerText++}`
+    if(+player1Score == maxScore){ endGame();}
 }
 
 function addPointP2 (){
-    player2Score = +player2Score.innerText++
+    player2Score = `${+player2Score.innerText++}`
+    if(+player2Score == maxScore){ endGame();}
 }
 function resetScreen (){
 
 }
-function endGame () {}
+
+function endGame (){
+    document.removeEventListener("click", clickButton)
+    if(+player1Score.innerText > +player2Score.innerText){
+        player1Score.style = "color: green"
+        player2Score.style = "color: red"
+    }   else {
+        player2Score.style = "color: green"
+        player1Score.style = "color: red"
+    }
+
+}
 
 document.addEventListener("click",clickButton)
