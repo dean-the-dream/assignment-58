@@ -82,3 +82,9 @@ input[type=number] {
 .reset{
     background-color: rgb(255,201,206);
 }
+
+.score-count, .score-title{
+    font-size: 2rem;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif
+}
