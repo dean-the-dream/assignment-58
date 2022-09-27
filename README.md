@@ -3,7 +3,7 @@
   <br>
   <a><img src="https://lh3.googleusercontent.com/g6-Sx61HWyiii4bnCBbI9FZTjI4Zh6OzYTYv2J8d-LexWW1ssIb7QtgwkAxJWHxGjRPbv6lUI7P40tTeLhmQkpaiHDDgQecDCyNcZj_yZd5_V5ATzd_4ti4PLmEo9CGi2Xs6orxPdQ=w2400" alt="A cool logo I found online." width="200"></a>
   <br>
-  Title Goes Here
+  Clarusway Assignment 58
   <br>
 </h1>
 
@@ -18,7 +18,8 @@
 
 ## About
 
-Explain in more detail what the project is about.
+The purpose of this assigment is to practice dom manipulation, js functions, and algorithms.
+It is supposed to behave like this website: https://cw-barry.github.io/score-keeper/
 
 ## Key Features
 
